@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charaset ="utf-8">
+    <meta name="description" content ="css lab">
+    <meta name="keyword" content ="HTML,CSS,XML,JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LAB 4</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+	<script src="https://kit.fontawesome.com/49bf8b90a1.js" crossorigin="anonymous"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<style type="text/css">
+    body{
+        position: center;
+        border: 4px solid black;
+        height: 400px;
+	    width: 800px;   
+	    margin: 80px auto 120px auto;
+	}
+    label,select,p{
+	    position: relative;
+	    top: 1px;
+	    left: 50px;
+	    right:500px;
+        display: inline;
+	    font-style:"Georgia",serif;
+	    font-weight: normal;
+	    font-size: small;
+    }
+    #details{  
+	    position: relative;
+        display: inline;
+	    text-align: center;
+	    font-style:"Times New Roman" ,serif;
+	    font-weight: bold;
+	    font-size: x-large;
+	    top: 2px;
+	    left: 200px;
+	    right:800px;
+	    width: 200px;
+    }
+    input{
+	    position: relative;
+	    top: 35px;
+	    left: 590px;
+	    right:500px;
+	    width: 150px;
+	    border: 2px soild #000;
+	    border-width: medium;
+    }
+    table{
+        width: 700px;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    th{
+	    text-align: left;
+    }
+    table,th,td{
+	    border: 1px solid #000;
+    }
+    th,td{
+	    padding: 5px;
+    }
+    .deleteIcon{
+	    color: red;
+    } 
+    .fa-eye{
+	    color: blue;
+    }
+    .fa-pen{
+	    color: orange;
+    }
+    .position{
+	    position: relative;
+	    top: -5px;
+	    left: 50px;
+	    right:500px;
+	    width: 200px;	
+	    position: relative;
+        display: inline;
+	    font-style:"Times New Roman" ,serif;
+	    font-weight: normal;
+	    font-size: medium;
+    }
+    .pagination{
+	    display: block;
+    }
+    .pagination a{
+	    color: black;
+	    text-decoration: none;
+	    float: left;
+	    padding: 10px;
+	    background-color: #f0f0f2;
+	    border: 1px;
+	    margin: 0px 4px;
+	    font-size: 12px;
+	    position: relative;
+	    top: -30px;
+	    left: 465px;
+	    right:00px;
+	}
+    #number{
+	    border-radius:50%;
+    }
+    .pagination a.active{
+	    background-color: blue;
+    }
+    </style>
+</head>
+<body>
+	<br><br>
+	<table >
+        <input type="text" id="name" name="name" placeholder="search" required maxlength="25"><br><br>
+        <label for="category">show </label>
+		<select id=" category" name="category" > 
+			<option value="number">1</option>
+			<option value="number">2</option>
+			<option value="number">3</option>
+			<option value="number">4</option>
+			<option value="number" selected>5</option>
+		</select>
+		&nbsp;<p>entries</p>
+		<p id="details">Customer<b> Details</b></p><br><br><br>
+		<tr>
+			<th>#</th>
+			<th>Name &nbsp;<i class="fas fa-sort"></i></th>
+			<th>Address</th>
+			<th>City&nbsp;<i class="fas fa-sort"></i></th>
+			<th>Pincode</th>
+			<th>Country&nbsp;<i class="fas fa-sort"></i></th>
+			<th>Actions</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Thomas Hardy</td>
+			<td>89 Chiarsco Rd.</td>
+			<td>Portland</td>
+			<td>91219</td>
+			<td>USA</td>
+            <td> 
+                <i class="fas fa-eye"></i>
+            	<i class="fas fa-pen"></i>
+                <i value="Delete" type="button" alt="Delete4"class="deleteIcon fa fa-trash"></i>
+            </td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Maria Anders</td>
+			<td>Obere Str.57</td>
+			<td>Berlin</td>
+			<td>12209</td>
+			<td>Germany</td>
+            <td>
+            	<i class="fas fa-eye"></i>  
+                <i class="fas fa-pen"></i>
+                <i value="Delete" type="button" alt="Delete4"class="deleteIcon fa fa-trash"></i>
+            </td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Fran Wilson</td>
+			<td>C/Araquil,67</td>
+			<td>Madrid</td>
+			<td>28023</td>
+			<td>Spain</td>
+            <td>
+            	<i class="fas fa-eye"></i>
+            	<i class="fas fa-pen"></i>
+            	<i value="Delete" type="button" alt="Delete4"class="deleteIcon fa fa-trash"></i>
+            </td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Dominic Perrier</td>
+			<td>25,rue Lauriston</td>
+			<td>Paris</td>
+			<td>75016</td>
+			<td>France</td>
+            <td>
+            	<i class="fas fa-eye"></i>
+            	<i class="fas fa-pen"></i>
+            	<i value="Delete" type="button" alt="Delete4"class="deleteIcon fa fa-trash"></i>
+            </td>
+		</tr>
+		<tr >
+			<td>5</td>
+			<td>Martin Blank</td>
+			<td>Via Monteblanco 34</td>
+			<td>Turin</td>
+			<td>10100</td>
+			<td>Italy</td>
+            <td>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-pen"></i>
+            	<i value="Delete" type="button" alt="Delete4"class="deleteIcon fa fa-trash"></i>
+            </td>
+		</tr>
+	</table>
+	<br>
+	<p class ="position">Showing <b>5</b> out of <b>25</b> entries</p>
+	<div class="pagination">
+		<a  href="#">Previous</a>
+		<a id="number"href="#">1</a>
+		<a id="number"href="#">2</a>
+		<a id="number" class="active" href="#">3</a>
+		<a id="number"href="#">4</a>
+		<a id="number" href="#">5</a>
+		<a href="#">Next</a>
+    </div>
+</body>
+</html>
